@@ -1,0 +1,1748 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shree Ji Atta - Premium quality Indian flours including Oats Atta, Bajra Atta, Chana Atta and more. Natural, nutritious flours for healthy living with free delivery across India.">
+    <meta name="keywords" content="Shree Ji Atta, premium atta, oats atta, bajra atta, chana atta, healthy flour, Indian flour, natural atta, online flour delivery">
+    <meta name="author" content="Shree Ji Atta">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Shree Ji Atta - Premium Quality Indian Flours">
+    <meta property="og:description" content="Natural, nutritious flours for healthy living with free delivery across India.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.shreejiatta.com">
+    <meta property="og:image" content="https://www.shreejiatta.com/images/logo-social.jpg">
+    <link rel="canonical" href="https://www.shreejiatta.com">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Shree Ji Atta | Premium Quality Oats Atta, Bajra Atta & Chana Atta Online</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #e67e22;
+            --secondary: #27ae60;
+            --accent: #f1c40f;
+            --dark: #2c3e50;
+            --light: #f9f9f9;
+            --text: #333;
+            --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f5f0e1;
+            color: var(--text);
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="%23f5f0e1"/><path d="M0,50 Q50,30 100,50 L100,100 L0,100 Z" fill="%23f8f4e6"/></svg>');
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            background-position: top;
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Breadcrumb */
+        .breadcrumb {
+            padding: 10px 0;
+            font-size: 0.9rem;
+            color: #666;
+            background: #f8f4e6;
+        }
+        .breadcrumb a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        .breadcrumb span {
+            margin: 0 5px;
+            color: #999;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, var(--primary) 0%, #d35400 100%);
+            padding: 15px 0;
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            animation: fadeInDown 1s ease;
+            margin: 10px 0;
+        }
+
+        .logo img {
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .logo-text {
+            color: white;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .logo-text h1 {
+            font-size: 22px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .logo-text p {
+            font-size: 12px;
+            opacity: 0.9;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        nav li {
+            margin: 5px 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 16px;
+            position: relative;
+            padding: 5px 0;
+            transition: var(--transition);
+        }
+
+        nav a:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: white;
+            transition: var(--transition);
+        }
+
+        nav a:hover:after {
+            width: 100%;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 70vh;
+            min-height: 500px;
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                        url('https://images.unsplash.com/photo-1606787366850-de6330128bfc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+            animation: fadeInUp 1s ease;
+        }
+
+        .hero h1 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+            font-family: 'Playfair Display', serif;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            margin-bottom: 25px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--secondary);
+            color: white;
+            padding: 10px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: var(--transition);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            border: 2px solid var(--secondary);
+        }
+
+        .btn:hover {
+            background: transparent;
+            transform: translateY(-5px);
+            box-shadow: 0 7px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Products Section */
+        .products {
+            padding: 60px 0;
+            background-color: var(--light);
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .section-title h2 {
+            font-size: 2rem;
+            color: var(--dark);
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 15px;
+            display: inline-block;
+            position: relative;
+        }
+
+        .section-title h2:after {
+            content: '';
+            position: absolute;
+            width: 70px;
+            height: 3px;
+            background: var(--primary);
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .section-title p {
+            color: #666;
+            max-width: 700px;
+            margin: 20px auto 0;
+            font-size: 1rem;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            animation: fadeIn 0.5s ease forwards;
+            opacity: 0;
+            transform: translateY(20px);
+            position: relative;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-img {
+            height: 180px;
+            background-color: #f8f4e6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .product-img img {
+            max-width: 70%;
+            max-height: 70%;
+            transition: var(--transition);
+        }
+
+        .product-card:hover .product-img img {
+            transform: scale(1.1);
+        }
+
+        .product-tag {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: var(--secondary);
+            color: white;
+            padding: 3px 10px;
+            border-radius: 15px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .product-info {
+            padding: 15px;
+        }
+
+        .product-info h3 {
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+            color: var(--dark);
+        }
+
+        .product-info p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .product-meta {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+        }
+
+        .price-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .current-price {
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: var(--primary);
+        }
+
+        .original-price {
+            text-decoration: line-through;
+            color: #999;
+            font-size: 0.9rem;
+        }
+
+        .add-to-cart {
+            background: var(--primary);
+            color: white;
+            border: none;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+        }
+
+        .add-to-cart:hover {
+            background: #d35400;
+            transform: rotate(10deg);
+        }
+
+        /* Features Section */
+        .features {
+            padding: 60px 0;
+            background: linear-gradient(to bottom, var(--light) 0%, #f1e6d2 100%);
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-card:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--primary);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: var(--transition);
+        }
+
+        .feature-card:hover:after {
+            transform: scaleX(1);
+        }
+
+        .feature-icon {
+            width: 70px;
+            height: 70px;
+            background: rgba(230, 126, 34, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px;
+            font-size: 25px;
+            color: var(--primary);
+        }
+
+        .feature-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: var(--dark);
+        }
+
+        .feature-card p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            padding: 60px 0;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="%23e67e22" opacity="0.05"/></svg>');
+        }
+        
+        .testimonial-container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+            padding: 0 20px;
+        }
+        
+        .testimonial {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            margin: 20px 0;
+            position: relative;
+        }
+        
+        .testimonial:before {
+            content: """;
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            font-size: 60px;
+            color: var(--primary);
+            opacity: 0.2;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        .testimonial p {
+            font-size: 1rem;
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+        
+        .customer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .customer img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 10px;
+            border: 2px solid var(--primary);
+        }
+        
+        .customer-info h4 {
+            font-size: 1.1rem;
+            color: var(--dark);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 50px 0 20px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .footer-column h3 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 8px;
+        }
+
+        .footer-column h3:after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 2px;
+            background: var(--primary);
+            bottom: 0;
+            left: 0;
+        }
+
+        .footer-column p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+            opacity: 0.8;
+            font-size: 0.9rem;
+        }
+
+        .social-links {
+            display: flex;
+            margin-top: 15px;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 35px;
+            height: 35px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            margin-right: 8px;
+            transition: var(--transition);
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .social-links a:hover {
+            background: var(--primary);
+            transform: translateY(-3px);
+        }
+
+        .contact-info li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .contact-info i {
+            margin-right: 10px;
+            color: var(--primary);
+            font-size: 18px;
+        }
+
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .contact-info a:hover {
+            color: var(--accent);
+        }
+
+        .quick-links li {
+            margin-bottom: 8px;
+        }
+
+        .quick-links a {
+            color: white;
+            text-decoration: none;
+            transition: var(--transition);
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        .quick-links a:hover {
+            color: var(--accent);
+            opacity: 1;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 13px;
+            opacity: 0.7;
+        }
+
+        /* Cart Modal Styles */
+        .cart-modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .cart-modal-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .cart-modal-content {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 500px;
+            max-height: 90vh;
+            overflow-y: auto;
+            transform: translateY(20px);
+            transition: all 0.3s ease;
+        }
+
+        .cart-modal-overlay.active .cart-modal-content {
+            transform: translateY(0);
+        }
+
+        .cart-modal-content h3 {
+            margin-bottom: 15px;
+            color: var(--dark);
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        #cartItems {
+            max-height: 300px;
+            overflow-y: auto;
+            margin-bottom: 15px;
+        }
+
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .item-info {
+            flex: 1;
+        }
+
+        .item-info h4 {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        .item-info p {
+            margin: 5px 0 0;
+            font-size: 0.8rem;
+            color: #666;
+        }
+
+        .item-controls {
+            display: flex;
+            align-items: center;
+        }
+
+        .quantity-control {
+            display: flex;
+            align-items: center;
+            margin-right: 15px;
+        }
+
+        .quantity-btn {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background: var(--primary);
+            color: white;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 12px;
+        }
+
+        .quantity {
+            margin: 0 8px;
+            min-width: 20px;
+            text-align: center;
+        }
+
+        .item-total {
+            font-weight: bold;
+            margin-right: 15px;
+            min-width: 60px;
+            text-align: right;
+        }
+
+        .remove-btn {
+            background: none;
+            border: none;
+            color: #e74c3c;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        #cartTotal {
+            font-weight: bold;
+            text-align: right;
+            font-size: 1.1rem;
+            padding: 10px 0;
+            border-top: 1px solid #eee;
+            margin-top: 10px;
+        }
+
+        /* Improved Form Styles */
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 500;
+            color: var(--dark);
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-family: inherit;
+            font-size: 15px;
+            transition: all 0.3s ease;
+            background-color: #f9f9f9;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 2px rgba(230, 126, 34, 0.2);
+            background-color: white;
+        }
+
+        .form-row {
+            display: flex;
+            gap: 10px;
+        }
+
+        .form-col {
+            flex: 1;
+        }
+
+        /* Improved Modal Buttons */
+        .modal-buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .modal-buttons button {
+            flex: 1;
+            padding: 10px;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .cancel-btn {
+            background: #f1f1f1;
+            color: #555;
+            border: 1px solid #ddd;
+        }
+
+        .cancel-btn:hover {
+            background: #e5e5e5;
+        }
+
+        .submit-btn {
+            background: var(--primary);
+            color: white;
+            border: 1px solid var(--primary);
+        }
+
+        .submit-btn:hover {
+            background: #d35400;
+            border-color: #d35400;
+        }
+
+        /* Error Message Style */
+        .error-message {
+            color: #e74c3c;
+            font-size: 13px;
+            margin-top: 5px;
+            display: none;
+        }
+
+        /* Cart Icon */
+        .cart-icon {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--primary);
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            z-index: 99;
+            transition: all 0.3s ease;
+        }
+
+        .cart-icon:hover {
+            transform: scale(1.1);
+        }
+
+        #cartCount {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background: var(--secondary);
+            color: white;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .product-card:nth-child(1) { animation-delay: 0.1s; }
+        .product-card:nth-child(2) { animation-delay: 0.2s; }
+        .product-card:nth-child(3) { animation-delay: 0.3s; }
+        .product-card:nth-child(4) { animation-delay: 0.4s; }
+        .product-card:nth-child(5) { animation-delay: 0.5s; }
+        .product-card:nth-child(6) { animation-delay: 0.6s; }
+        .product-card:nth-child(7) { animation-delay: 0.7s; }
+        .product-card:nth-child(8) { animation-delay: 0.8s; }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .logo {
+                margin-bottom: 15px;
+                justify-content: center;
+            }
+            
+            nav ul {
+                margin-top: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            nav li {
+                margin: 5px 10px;
+            }
+            
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            .product-grid {
+                grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            }
+            
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .cart-modal-content {
+                width: 95%;
+                padding: 15px;
+            }
+            
+            .cart-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .item-controls {
+                margin-top: 10px;
+                width: 100%;
+                justify-content: space-between;
+            }
+            
+            .cart-icon {
+                width: 50px;
+                height: 50px;
+                font-size: 20px;
+                bottom: 20px;
+                right: 20px;
+            }
+            
+            .form-row {
+                flex-direction: column;
+                gap: 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo-text h1 {
+                font-size: 20px;
+            }
+            
+            .hero h1 {
+                font-size: 1.5rem;
+            }
+            
+            .section-title h2 {
+                font-size: 1.6rem;
+            }
+            
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .testimonial {
+                padding: 20px;
+            }
+            
+            .modal-buttons {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .modal-buttons button {
+                width: 100%;
+            }
+        }
+    </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Shree Ji Atta",
+      "url": "https://www.shreejiatta.com",
+      "logo": "https://www.shreejiatta.com/images/logo.jpg",
+      "description": "Premium quality Indian flours including Oats Atta, Bajra Atta, Chana Atta and more",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Grain Street",
+        "addressLocality": "Mumbai",
+        "postalCode": "400001",
+        "addressCountry": "IN"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+919654417000",
+        "contactType": "customer service",
+        "areaServed": "IN"
+      }
+    }
+    </script>
+</head>
+<body>
+    <!-- Breadcrumb Navigation -->
+    <div class="container breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+        <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <a href="https://www.shreejiatta.com" itemprop="item">
+                <span itemprop="name">Home</span>
+            </a>
+            <meta itemprop="position" content="1">
+        </span>
+        <span>/</span>
+        <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <span itemprop="name">Products</span>
+            <meta itemprop="position" content="2">
+        </span>
+    </div>
+
+    <!-- Header -->
+    <header itemscope itemtype="http://schema.org/Store">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Shree Ji Atta Logo" itemprop="logo">
+                    <div class="logo-text">
+                        <h1 itemprop="name">Shree Ji Atta</h1>
+                        <p itemprop="description">Pure. Natural. Nutritious.</p>
+                    </div>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#" itemprop="url">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#features">Benefits</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#footer">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Premium Quality Indian Flours for Healthy Living</h1>
+                <p>Handcrafted with tradition, packed with nutrition. Our range of atta brings the goodness of Indian grains to your kitchen.</p>
+                <a href="#products" class="btn">Explore Our Flours</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Premium Flour Products</h2>
+                <p>Discover our wide range of nutritious flours made from the finest grains, preserving traditional methods and natural goodness.</p>
+            </div>
+            
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-card" itemscope itemtype="http://schema.org/Product">
+                    <div class="product-img">
+                        <img src="images/oats-atta.jpg" alt="Oats Atta Flour" itemprop="image">
+                        <span class="product-tag">Popular</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 itemprop="name">Oats Atta</h3>
+                        <p itemprop="description">Rich in fiber and essential nutrients for a healthy lifestyle.</p>
+                        <div class="product-meta">
+                            <div class="price-container" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                <span class="current-price" itemprop="price" content="125.00">₹125.00</span>
+                                <span class="original-price" itemprop="priceCurrency" content="INR">₹180.00</span>
+                            </div>
+                            <button class="add-to-cart" aria-label="Order Oats Atta">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card" itemscope itemtype="http://schema.org/Product">
+                    <div class="product-img">
+                        <img src="images/bajra-atta.jpg" alt="Bajra Atta Flour" itemprop="image">
+                    </div>
+                    <div class="product-info">
+                        <h3 itemprop="name">Bajra Atta</h3>
+                        <p itemprop="description">Gluten-free flour perfect for traditional Indian rotis.</p>
+                        <div class="product-meta">
+                            <div class="price-container" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                <span class="current-price" itemprop="price" content="38.00">₹38.00</span>
+                                <span class="original-price" itemprop="priceCurrency" content="INR">₹40.00</span>
+                            </div>
+                            <button class="add-to-cart" aria-label="Order Bajra Atta">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card" itemscope itemtype="http://schema.org/Product">
+                    <div class="product-img">
+                        <img src="images/chana-atta.jpg" alt="Chana Atta Flour" itemprop="image">
+                        <span class="product-tag">Best Deal</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 itemprop="name">Chana Atta</h3>
+                        <p itemprop="description">High protein flour ideal for making nutritious snacks.</p>
+                        <div class="product-meta">
+                            <div class="price-container" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                <span class="current-price" itemprop="price" content="95.00">₹95.00</span>
+                                <span class="original-price" itemprop="priceCurrency" content="INR">₹400.00</span>
+                            </div>
+                            <button class="add-to-cart" aria-label="Order Chana Atta">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="product-card" itemscope itemtype="http://schema.org/Product">
+                    <div class="product-img">
+                        <img src="images/wheat-atta.jpg" alt="Premium Wheat Atta" itemprop="image">
+                    </div>
+                    <div class="product-info">
+                        <h3 itemprop="name">Premium Wheat Atta</h3>
+                        <p itemprop="description">Finest quality wheat flour for soft and fluffy rotis.</p>
+                        <div class="product-meta">
+                            <div class="price-container" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                <span class="current-price" itemprop="price" content="36.00">₹36.00</span>
+                                <span class="original-price" itemprop="priceCurrency" content="INR">₹37.00</span>
+                            </div>
+                            <button class="add-to-cart" aria-label="Order Wheat Atta">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 5 -->
+                <div class="product-card" itemscope itemtype="http://schema.org/Product">
+                    <div class="product-img">
+                        <img src="images/sarbati-atta.jpg" alt="MP Sarbati Atta" itemprop="image">
+                    </div>
+                    <div class="product-info">
+                        <h3 itemprop="name">MP Sarbati Atta</h3>
+                        <p itemprop="description">Made from premium Sarbati wheat for exceptional taste.</p>
+                        <div class="product-meta">
+                            <div class="price-container" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                <span class="current-price" itemprop="price" content="42.00">₹42.00</span>
+                                <span class="original-price" itemprop="priceCurrency" content="INR">₹44.00</span>
+                            </div>
+                            <button class="add-to-cart" aria-label="Order Sarbati Atta">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 6 -->
+                <div class="product-card" itemscope itemtype="http://schema.org/Product">
+                    <div class="product-img">
+                        <img src="images/ragi-atta.jpg" alt="Ragi Atta Flour" itemprop="image">
+                        <span class="product-tag">New</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 itemprop="name">Ragi Atta</h3>
+                        <p itemprop="description">Rich in calcium and iron, perfect for health-conscious families.</p>
+                        <div class="product-meta">
+                            <div class="price-container" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                <span class="current-price" itemprop="price" content="50.00">₹50.00</span>
+                                <span class="original-price" itemprop="priceCurrency" content="INR">₹60.00</span>
+                            </div>
+                            <button class="add-to-cart" aria-label="Order Ragi Atta">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 7 -->
+                <div class="product-card" itemscope itemtype="http://schema.org/Product">
+                    <div class="product-img">
+                        <img src="images/jau-atta.jpg" alt="Jau Atta Flour" itemprop="image">
+                    </div>
+                    <div class="product-info">
+                        <h3 itemprop="name">Jau Atta</h3>
+                        <p itemprop="description">Barley flour for a distinct flavor and added health benefits.</p>
+                        <div class="product-meta">
+                            <div class="price-container" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                <span class="current-price" itemprop="price" content="45.00">₹45.00</span>
+                                <span class="original-price" itemprop="priceCurrency" content="INR">₹50.00</span>
+                            </div>
+                            <button class="add-to-cart" aria-label="Order Jau Atta">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 8 -->
+                <div class="product-card" itemscope itemtype="http://schema.org/Product">
+                    <div class="product-img">
+                        <img src="images/soybean-atta.jpg" alt="Soybean Atta Flour" itemprop="image">
+                    </div>
+                    <div class="product-info">
+                        <h3 itemprop="name">Soybean Atta</h3>
+                        <p itemprop="description">High protein flour that enhances the nutritional value of your meals.</p>
+                        <div class="product-meta">
+                            <div class="price-container" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                <span class="current-price" itemprop="price" content="95.00">₹95.00</span>
+                                <span class="original-price" itemprop="priceCurrency" content="INR">₹99.00</span>
+                            </div>
+                            <button class="add-to-cart" aria-label="Order Soybean Atta">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Choose Shree Ji Atta?</h2>
+                <p>We are committed to providing the highest quality products with traditional values and modern standards.</p>
+            </div>
+            
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>100% Natural</h3>
+                    <p>Our flours are made from carefully selected grains without any additives or preservatives.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Nutritious</h3>
+                    <p>Preserving the natural nutrients through traditional stone grinding methods.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Premium Quality</h3>
+                    <p>Rigorous quality checks ensure you get the finest flour every time.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Free Delivery</h3>
+                    <p>Free home delivery on orders above ₹500 across India.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>What Our Customers Say</h2>
+                <p>Hear from families who have experienced the quality of Shree Ji Atta</p>
+            </div>
+            
+            <div class="testimonial-container">
+                <div class="testimonial" itemscope itemtype="https://schema.org/Review">
+                    <p itemprop="reviewBody">"Shree Ji Atta has transformed our family's meals. The quality is unmatched and the taste takes me back to my grandmother's cooking. We've been using their products for 6 months now and won't switch to any other brand."</p>
+                    <div class="customer" itemprop="author" itemscope itemtype="https://schema.org/Person">
+                        <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Priya Sharma" itemprop="image">
+                        <div class="customer-info">
+                            <h4 itemprop="name">Priya Sharma</h4>
+                            <p itemprop="description">Housewife, Mumbai</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" itemscope itemtype="http://schema.org/LocalBusiness">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Shree Ji Atta</h3>
+                    <p itemprop="description">Bringing the goodness of traditional Indian grains to modern households since 2005. Our commitment to quality and purity remains unwavering.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span><span itemprop="streetAddress">123 Grain Street</span>, <span itemprop="addressLocality">Mumbai</span>, <span itemprop="postalCode">400001</span></span>
+                        </li>
+                        <li itemprop="telephone">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+91 9654417000</span>
+                        </li>
+                        <li itemprop="email">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@shreejiatta.com</span>
+                        </li>
+                        <li>
+                            <i class="fab fa-whatsapp"></i>
+                            <span><a href="https://wa.me/919654417000" style="color:white;text-decoration:none;">Chat on WhatsApp</a></span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="quick-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#features">Benefits</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#">Quality Standards</a></li>
+                        <li><a href="#">Wholesale Orders</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; <span itemprop="copyrightYear">2023</span> Shree Ji Atta. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal-overlay" id="cartModal">
+        <div class="cart-modal-content">
+            <h3>Your Order Cart</h3>
+            <div id="cartItems"></div>
+            <div id="cartTotal"></div>
+            
+            <form id="addressForm">
+                <h4>Delivery Information</h4>
+                
+                <div class="form-group">
+                    <label for="customerName">Full Name</label>
+                    <input type="text" id="customerName" class="form-control" required>
+                    <div class="error-message" id="nameError">Please enter your full name</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="customerPhone">Phone Number</label>
+                    <input type="tel" id="customerPhone" class="form-control" required>
+                    <div class="error-message" id="phoneError">Please enter a valid 10-digit phone number</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="customerAddress">House No. & Street</label>
+                    <input type="text" id="customerAddress" class="form-control" required>
+                    <div class="error-message" id="addressError">Please enter your complete address</div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-col">
+                        <div class="form-group">
+                            <label for="customerArea">Sector/Area</label>
+                            <input type="text" id="customerArea" class="form-control" required>
+                            <div class="error-message" id="areaError">Please enter your area</div>
+                        </div>
+                    </div>
+                    <div class="form-col">
+                        <div class="form-group">
+                            <label for="customerPincode">Pincode</label>
+                            <input type="text" id="customerPincode" class="form-control" required>
+                            <div class="error-message" id="pincodeError">Please enter a valid 6-digit pincode</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="modal-buttons">
+                    <button type="button" id="closeCartBtn" class="cancel-btn">
+                        Continue Shopping
+                    </button>
+                    <button type="submit" class="submit-btn">
+                        <i class="fab fa-whatsapp"></i> Send Order
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Cart Icon -->
+    <div class="cart-icon" id="cartIcon">
+        <i class="fas fa-shopping-cart"></i>
+        <span id="cartCount">0</span>
+    </div>
+
+    <script>
+        // Cart functionality
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        let lastClickedTime = 0;
+        const CLICK_DELAY = 500; // 500ms delay between clicks
+        
+        // Update cart count display
+        function updateCartCount() {
+            const count = cart.reduce((total, item) => total + item.quantity, 0);
+            document.getElementById('cartCount').textContent = count;
+            document.getElementById('cartCount').setAttribute('aria-label', `${count} items in cart`);
+        }
+        
+        // Save cart to localStorage
+        function saveCart() {
+            localStorage.setItem('cart', JSON.stringify(cart));
+        }
+        
+        // Render cart items
+        function renderCart() {
+            const cartItemsEl = document.getElementById('cartItems');
+            const cartTotalEl = document.getElementById('cartTotal');
+            
+            if (cart.length === 0) {
+                cartItemsEl.innerHTML = '<p style="text-align:center;padding:20px;">Your cart is empty</p>';
+                cartTotalEl.innerHTML = '';
+                return;
+            }
+            
+            let html = '';
+            let total = 0;
+            
+            cart.forEach((item, index) => {
+                const itemTotal = item.price * item.quantity;
+                total += itemTotal;
+                
+                html += `
+                    <div class="cart-item">
+                        <div class="item-info">
+                            <h4>${item.name}</h4>
+                            <p>₹${item.price.toFixed(2)} per kg</p>
+                        </div>
+                        <div class="item-controls">
+                            <div class="quantity-control">
+                                <button class="quantity-btn" onclick="updateQuantity(${index}, -1)" aria-label="Decrease quantity">
+                                    <i class="fas fa-minus"></i>
+                                </button>
+                                <span class="quantity">${item.quantity} kg</span>
+                                <button class="quantity-btn" onclick="updateQuantity(${index}, 1)" aria-label="Increase quantity">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                            <span class="item-total">₹${itemTotal.toFixed(2)}</span>
+                            <button class="remove-btn" onclick="removeFromCart(${index})" aria-label="Remove item">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </div>
+                    </div>
+                `;
+            });
+            
+            cartItemsEl.innerHTML = html;
+            cartTotalEl.innerHTML = `<strong>Total: ₹${total.toFixed(2)}</strong>`;
+        }
+        
+        // Add to cart function with click delay protection
+        function addToCart(productName, price, quantity = 1) {
+            const now = Date.now();
+            if (now - lastClickedTime < CLICK_DELAY) {
+                return; // Ignore rapid successive clicks
+            }
+            lastClickedTime = now;
+            
+            const existingItem = cart.find(item => item.name === productName);
+            
+            if (existingItem) {
+                existingItem.quantity += quantity;
+            } else {
+                cart.push({
+                    name: productName,
+                    price: parseFloat(price),
+                    quantity: quantity
+                });
+            }
+            
+            updateCartCount();
+            saveCart();
+            
+            // Show visual feedback
+            const button = event.target.closest('.add-to-cart') || event.target.closest('.product-card');
+            if (button) {
+                const feedbackEl = button.classList.contains('add-to-cart') ? button : button.querySelector('.add-to-cart');
+                if (feedbackEl) {
+                    feedbackEl.innerHTML = '<i class="fas fa-check"></i>';
+                    feedbackEl.style.backgroundColor = '#27ae60';
+                    
+                    setTimeout(() => {
+                        feedbackEl.innerHTML = '<i class="fas fa-shopping-cart"></i>';
+                        feedbackEl.style.backgroundColor = '';
+                    }, 1000);
+                }
+            }
+        }
+        
+        // Update item quantity
+        function updateQuantity(index, change) {
+            cart[index].quantity += change;
+            
+            if (cart[index].quantity <= 0) {
+                cart.splice(index, 1);
+            }
+            
+            renderCart();
+            updateCartCount();
+            saveCart();
+        }
+        
+        // Remove from cart
+        function removeFromCart(index) {
+            cart.splice(index, 1);
+            renderCart();
+            updateCartCount();
+            saveCart();
+        }
+        
+        // Toggle cart modal
+        function toggleCartModal() {
+            const modal = document.getElementById('cartModal');
+            modal.classList.toggle('active');
+            document.body.style.overflow = modal.classList.contains('active') ? 'hidden' : '';
+            
+            if (modal.classList.contains('active')) {
+                renderCart();
+            }
+        }
+        
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            // Update cart count on load
+            updateCartCount();
+            
+            // Make entire product card clickable for adding to cart
+            document.querySelectorAll('.product-card').forEach(card => {
+                card.addEventListener('click', function(e) {
+                    // Don't trigger if clicking on the add to cart button (to avoid double trigger)
+                    if (!e.target.closest('.add-to-cart')) {
+                        const productName = card.querySelector('h3').textContent;
+                        const price = card.querySelector('.current-price').textContent.replace('₹', '');
+                        addToCart(productName, price);
+                    }
+                });
+            });
+            
+            // Add to cart button click
+            document.querySelectorAll('.add-to-cart').forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.stopPropagation(); // Prevent event bubbling to product card
+                    const productCard = this.closest('.product-card');
+                    const productName = productCard.querySelector('h3').textContent;
+                    const price = productCard.querySelector('.current-price').textContent.replace('₹', '');
+                    addToCart(productName, price);
+                });
+            });
+            
+            // Cart icon click
+            document.getElementById('cartIcon').addEventListener('click', toggleCartModal);
+            
+            // Close cart button
+            document.getElementById('closeCartBtn').addEventListener('click', toggleCartModal);
+            
+            // Close modal when clicking outside
+            document.getElementById('cartModal').addEventListener('click', function(e) {
+                if (e.target === this) {
+                    toggleCartModal();
+                }
+            });
+            
+            // Enhanced form validation
+            const form = document.getElementById('addressForm');
+            const fields = {
+                name: document.getElementById('customerName'),
+                phone: document.getElementById('customerPhone'),
+                address: document.getElementById('customerAddress'),
+                area: document.getElementById('customerArea'),
+                pincode: document.getElementById('customerPincode')
+            };
+            
+            // Validate on input
+            fields.phone.addEventListener('input', function() {
+                const isValid = /^[0-9]{0,10}$/.test(this.value);
+                if (!isValid) {
+                    this.value = this.value.slice(0, 10);
+                }
+            });
+            
+            fields.pincode.addEventListener('input', function() {
+                const isValid = /^[0-9]{0,6}$/.test(this.value);
+                if (!isValid) {
+                    this.value = this.value.slice(0, 6);
+                }
+            });
+            
+            // Validate on submit
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                let isValid = true;
+                
+                // Reset errors
+                document.querySelectorAll('.error-message').forEach(el => {
+                    el.style.display = 'none';
+                });
+                
+                // Validate name
+                if (!fields.name.value.trim()) {
+                    document.getElementById('nameError').style.display = 'block';
+                    isValid = false;
+                }
+                
+                // Validate phone
+                if (!/^[0-9]{10}$/.test(fields.phone.value)) {
+                    document.getElementById('phoneError').style.display = 'block';
+                    isValid = false;
+                }
+                
+                // Validate address
+                if (!fields.address.value.trim()) {
+                    document.getElementById('addressError').style.display = 'block';
+                    isValid = false;
+                }
+                
+                // Validate area
+                if (!fields.area.value.trim()) {
+                    document.getElementById('areaError').style.display = 'block';
+                    isValid = false;
+                }
+                
+                // Validate pincode
+                if (!/^[0-9]{6}$/.test(fields.pincode.value)) {
+                    document.getElementById('pincodeError').style.display = 'block';
+                    isValid = false;
+                }
+                
+                if (!isValid || cart.length === 0) {
+                    if (cart.length === 0) {
+                        alert('Your cart is empty!');
+                    }
+                    return;
+                }
+                
+                // Prepare WhatsApp message
+                let message = `Hi Shree Ji Atta,\n\nI would like to order:\n\n`;
+                
+                // Add products
+                let total = 0;
+                cart.forEach(item => {
+                    const itemTotal = item.price * item.quantity;
+                    total += itemTotal;
+                    message += `*${item.name}* - ₹${item.price.toFixed(2)}/kg x ${item.quantity}kg = ₹${itemTotal.toFixed(2)}\n`;
+                });
+                
+                message += `\n*Total:* ₹${total.toFixed(2)}\n\n`;
+                message += `*Customer Details:*\nName: ${fields.name.value}\nPhone: ${fields.phone.value}\n\n`;
+                message += `*Delivery Address:*\n${fields.address.value}\n${fields.area.value}\nPincode: ${fields.pincode.value}\n\n`;
+                message += `Please confirm availability and delivery time. Thank you!`;
+                
+                // Open WhatsApp
+                window.open(`https://wa.me/919654417000?text=${encodeURIComponent(message)}`, '_blank');
+                
+                // Close cart and reset
+                toggleCartModal();
+                cart = [];
+                localStorage.removeItem('cart');
+                updateCartCount();
+                this.reset();
+            });
+            
+            // Animation trigger on scroll
+            const productCards = document.querySelectorAll('.product-card');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.animation = 'fadeIn 0.5s ease forwards';
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            productCards.forEach(card => {
+                observer.observe(card);
+            });
+            
+            // Smooth scrolling for navigation
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        window.scrollTo({
+                            top: target.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
